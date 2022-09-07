@@ -12,7 +12,7 @@ def scrape_all():
     browser = Browser('chrome', **executable_path, headless=True)
 
     news_title, news_paragraph = mars_news(browser)
-    
+
     # Run all scraping functions and store results in a dictionary
     data = {
         "news_title":news_title,
@@ -111,14 +111,15 @@ def hemisphere_image(browser):
     # 3. Write code to retrieve the image urls and titles for each hemisphere.
     # Find and click the full image button
     # Find the hemisphere image element 
-    hemisphere_image_elem = browser.find_by_css('a.product-item img')
+    # Can refactor to range(len(hemisphere_image)) using the variable below
+    #hemisphere_image_elem = browser.find_by_css('a.product-item img')
 
     # For loop to iterate through image links
     for i in range(4):
         hemisphere_dict = {}
 
         # Click thourgh to next hemisphere
-        hemisphere_image_elem[i].click()
+        browser.find_by_css('a.product-item img')[i].click()
 
         # Grab href of image
         sample_link = browser.find_by_text('Sample').first
