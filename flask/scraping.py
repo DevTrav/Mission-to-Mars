@@ -12,7 +12,7 @@ def scrape_all():
     browser = Browser('chrome', **executable_path, headless=True)
 
     news_title, news_paragraph = mars_news(browser)
-
+    
     # Run all scraping functions and store results in a dictionary
     data = {
         "news_title":news_title,
@@ -20,7 +20,7 @@ def scrape_all():
         "featured_image": featured_image(browser),
         "facts": mars_facts(),
         "last_modified": dt.datetime.now(),
-        "hemisphere_data": hemisphere_image(browser)
+        "hemisphere_data":  hemisphere_image(browser)
     }
 
     # Stop webdriver and return data
@@ -137,7 +137,6 @@ def hemisphere_image(browser):
 
         #Click back to homepage
         browser.back()
-# # Click Sample link to full image
     return hemisphere_image_urls
 
 if __name__ == "__main__":
