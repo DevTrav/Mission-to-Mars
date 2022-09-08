@@ -22,6 +22,6 @@ VS Code
 
 ## Results
 The Flask aaplication scraped text and images successfully form the sites. Then, stored the image urls and text in MongoDB.
-![image](https://share.getcloudapp.com/qGuxodkq)
+[](https://share.getcloudapp.com/qGuxodkq)
 
 ## Challenges
