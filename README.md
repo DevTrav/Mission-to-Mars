@@ -24,20 +24,22 @@ The purpose of this project is to build a Web App that will :
 
 - Install instructions coming soon!
 
-
+![image](resources/scrape_app.png)
 ## Results
 The Flask aaplication scraped text and images successfully form the sites. Then, stored the image urls and text in MongoDB.
 
 ```
 //Verified the scrape results stored with db.mars.find()
-![image](resources/mars_db.gif)
 ```
+
+![image](resources/mars_db.gif)
+
 ## Challenges
 - The project had to issues with dependencies being stored on the wrong vitual environment PATH. 
--- This caused the application to be unable to run from VS Code terminal.
--- The misplaced dependency files in the `flask` folder alao caused the builtin git extenions to stop tracking the local version changes.
--- I confirmed that the remote repo did no have the misplaced dependency files.
--- Resolution: 
+- This caused the application to be unable to run from VS Code terminal.
+- The misplaced dependency files in the `flask` folder alao caused the builtin git extenions to stop tracking the local version changes.
+- I confirmed that the remote repo did no have the misplaced dependency files.
+- Resolution: 
     1. Deleted the dependencie files inn the local repo.
     2. Copied remaining application files with new changes to a temporary directory
     3. Nuked the local repo.
