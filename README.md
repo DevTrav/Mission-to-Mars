@@ -3,9 +3,12 @@
 
 ## Purpose
 The purpose of this project is to build a Web App that will :
+
 1. Scrape several websites for the most recent Mars data. 
-2. Store the extracted data in a NoSQL database 
-3.Then create a frontend with Bootstrap to display the findings.
+
+2. Store the extracted data in a NoSQL database.
+
+3. Then create a frontend with Bootstrap to display the findings.
 
 
 ## Software
