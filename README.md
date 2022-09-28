@@ -38,10 +38,10 @@ The Flask aaplication scraped text and images successfully form the sites. Then,
 ![image](resources/mars_db.gif)
 
 ## Challenges
-- The project had to issues with dependencies being stored on the wrong vitual environment PATH. 
+- The project had issues with dependencies being stored on the wrong vitual environment PATH. 
 - This caused the application to be unable to run from VS Code terminal.
-- The misplaced dependency files in the `flask` folder alao caused the builtin git extenions to stop tracking the local version changes.
-- I confirmed that the remote repo did no have the misplaced dependency files.
+- The misplaced dependency files in the `flask` folder also caused the builtin git extenions to stop tracking the local version changes.
+- I confirmed that the remote repo did not have the misplaced dependency files.
 - Resolution: 
     1. Deleted the dependencie files inn the local repo.
     2. Copied remaining application files with new changes to a temporary directory
